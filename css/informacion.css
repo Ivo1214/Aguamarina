@@ -1,0 +1,72 @@
+
+.info {
+    display:flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 50vh;
+    align-items: center;
+    padding: 0px 2vw 0px 2vw;
+}
+
+.info .sobreMi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobreMi h2 {
+    color: #000000;
+    font-family: 'Sigmar', sans-serif;
+    font-size: clamp(1.4em,1.7em,2em);
+}
+.sobreMi p {
+    color: #000000;
+    font-family: 'Dosis', sans-serif;
+    font-style: normal;
+    font-size: clamp(1.1em,1.2em,1.2em);
+}
+
+.info img {  
+    height: 40%;
+    border-radius: 20px;
+    /* border: 5px solid #000000; */
+    box-shadow: -1px 4px 5px #488F8B;
+    display: none;
+}
+
+
+@media screen and (min-width: 700px) {
+    .sobreMi h2 {
+        font-size: clamp(2em,2.2em,2.2em);
+    }
+    
+    .sobreMi p{
+        font-size: clamp(1.8em,1.8em,2em);
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .info {
+        display:flex;
+        justify-content: space-around;
+    }
+
+    .info img {
+        height: 60%;
+        border-radius: 20px;
+        display:initial;
+    }
+
+}
+
+
+@media screen and (max-width: 280px) {
+    .sobreMi h2 {
+        font-size: clamp(1em,1.5em,1.5em);
+    }
+    
+    .sobreMi p{
+        font-size: clamp(1em,1em,2em);
+    }
+}

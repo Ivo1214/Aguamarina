@@ -1,0 +1,64 @@
+
+.trabajos {
+    width: 100vw;
+    height: 70vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 35px 0px 35px;
+    gap: 10%
+}
+.trabajos h2{
+    color: #000000;
+    font-family: 'Sigmar', sans-serif;
+    font-size: clamp(1.4em,1.7em,2em);
+}
+
+.carousel-item img{
+    height: 30vh;
+    border-radius: 40px;
+    border: 3px solid #000000;
+}
+
+
+.boton {
+    background-color: #2B6764;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 20px 40px 20px 40px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1em;
+    box-shadow: 3px 3px #000000;
+  }
+
+div.boton:hover{
+    cursor: pointer;
+    padding: 15px 35px 15px 35px;
+    border: 5px solid #389b96;
+    transform:scale(1.08);
+}
+
+.boton a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+@media screen and (min-width: 700px) {
+    .trabajos h2{
+        font-size: clamp(2em,2.2em,2.2em);
+    }
+
+    .boton {
+        font-size: clamp(1.5em,1.5em,2em);
+    }
+}
+
+
+@media screen and (max-width: 280px) {
+    .trabajos h2{
+        font-size: clamp(1em,1.5em,1.5em);
+    }
+}
