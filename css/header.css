@@ -1,6 +1,8 @@
 header {
-  height: fit-content;
+  /* height: fit-content; */
+  height: 8vh ;
   width: 100vw;
+  background-color: #488F8B;
 }
 
 .navbar {
@@ -8,55 +10,32 @@ header {
   transition: all ease-in-out 800ms;
 }
 
-.centrar-texto{
-display: flex;
-justify-content: center;
-align-items: center;
+.navbar-nav {
+  gap: 1vw;
 }
 
-.navbar-nav a{
-    font-size: 1.4em;
-    text-transform: uppercase;
-    color: #faebd7;
-    font-family: 'Rubik';
-    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+.centrar-texto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+header span, .texto-aguamarina {
+  font-size: clamp(1.4em,1.7em,8vw);
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  color: #faebd7;
+  text-decoration: none;
+  font-family: 'Rubik';
+}
+
 
 .texto-aguamarina{
-    display: flex;
-    font-size: 1.4em;
-    text-transform: uppercase;
-    color: #faebd7;
-    font-family: 'Lilita One';
-    text-decoration: none;
-    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  display: flex;
 }
 
 
 .navbar-nav a:hover{
-    color: var(--hover);
-    transition: all 100ms ease-in-out;;
+  color: var(--hover);
+  transition: all 100ms ease-in-out;;
 }
-
-
-@media screen and (min-width: 1000px) {
-  .texto-aguamarina{
-    font-size: 2em;
-  }
-
-  .navbar-nav a{
-    font-size: 2em;
-  }
-}
-
-
-@media screen and (min-width: 400px) {
-  .texto-aguamarina{
-    font-size: 1.7em;
-  }
-
-  .navbar-nav a{
-    font-size: 1.7em;
-  }
-}
-

@@ -3,18 +3,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    /* height: 50vh; */
+    height: fit-content;
     background-image: url("../images/wallpaperflare.com_wallpaper.jpg");
     background-size: cover;
     background-position: center;
 }
 
 .banner img {
-    width: 70%;
-}
-
-@media screen and (min-width: 1000px) {
-    .banner img {
-        width: 35%;
-    }
+    padding: 2.5em 0 2.5em 0;
+    width: clamp(20em,30em,55vw);
 }

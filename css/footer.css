@@ -9,7 +9,12 @@ footer {
     padding-bottom: 1%;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 1em;
+}
+
+footer span {
+    font-size: clamp(1em,1.3em,10vw);
+    text-shadow: -1px 4px 5px #000000;
 }
 
 .enlacesFooter {
@@ -17,7 +22,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 2em;
 }
 
 .enlacesFooter a{
@@ -26,29 +31,12 @@ footer {
 
 .logoFooter {
     display:flex;
-    width: 20%;
+    width: clamp(7em,15em,12vw);
 }
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
     .enlacesFooter a span{
         display: none;
     }
-}
-
-@media screen and (min-width: 1000px) {
-    .enlacesFooter {
-        gap: 50px;
-    }
-
-    .enlacesFooter a svg{
-        height: 30px;
-        width: auto;
-    }
-
-    .logoFooter {
-        display:flex;
-        width: 7%;
-    }
-
 }
