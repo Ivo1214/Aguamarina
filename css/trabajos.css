@@ -1,91 +1,38 @@
-/* 
 .trabajos {
-    width: 100vw;
-    height: 70vh;
+    position: relative;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0px 35px 0px 35px;
-    gap: 10%
+    width: 100vw;
+    height: fit-content;
+    text-align: center;
+    padding-bottom: 10px;
 }
-.trabajos h2{
+  
+.titulo-carrusel{
     color: #000000;
+    text-shadow: -1px 4px 5px #488F8B;
     font-family: 'Sigmar', sans-serif;
-    font-size: clamp(1.4em,1.7em,2em);
+    font-size: clamp(1.8em,2.4em,9vw);
+    padding:0 10px 10px 10px; 
+    margin-bottom:40px;
 }
-
-.carousel-item img{
-    height: 30vh;
-    border-radius: 40px;
-    border: 3px solid #000000;
-}
-
-
-
-@media screen and (min-width: 700px) {
-    .trabajos h2{
-        font-size: clamp(2em,2.2em,2.2em);
-    }
-
-    .boton {
-        font-size: clamp(1.5em,1.5em,2em);
-    }
-}
-
-
-@media screen and (max-width: 280px) {
-    .trabajos h2{
-        font-size: clamp(1em,1.5em,1.5em);
-    }
-}
-
-
- */
-
-.seccion-carrusel{
-    padding: 100px 0px 100px 0px;
-    background: rgb(255, 245, 241);
-    border-top: 5px solid var(--color-borde-margen-arriba);
-  }
   
-  .trabajos {
-      position: relative;
-      display:flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      padding-bottom: 10px;
-      background: var(--color-fondo);
-      background-size: cover;
-  }
-  
-  .titulo-carrusel{
-      color: #000000;
-      text-shadow: -1px 4px 5px #488F8B;
-      font-family: 'Sigmar', sans-serif;
-      font-size: clamp(1.8em,2.4em,10vw);
-      padding:0 10px 10px 10px; 
-      margin-bottom:40px;
-  }
-  
-  .contenedor-carousel{
-      width: 60%;
-      margin: auto;
-      overflow: hidden;
-      align-items: center;
-  }
+.contenedor-carousel{
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+    align-items: center;
+}
 
-  .card-title{
+.card-title{
     font-family: 'Dosis', sans-serif;
     text-shadow: -1px 4px 5px #488F8B;
-  }
+}
 
 
-  .boton {
+.boton {
     background-color: #2B6764;
     text-align: center;
     color: #ffffff;
@@ -94,16 +41,16 @@
     font-family: 'Dosis', sans-serif;
     font-size: 1em;
     box-shadow: 3px 3px #000000;
-  }
+}
 
-    div.boton:hover{
-        cursor: pointer;
-        padding: 15px 35px 15px 35px;
-        border: 5px solid #389b96;
-        transform:scale(1.08);
-    }
+div.boton:hover{
+    cursor: pointer;
+    padding: 15px 35px 15px 35px;
+    border: 5px solid #389b96;
+    transform:scale(1.08);
+}
 
-    .boton a{
-        color: #ffffff;
-        text-decoration: none;
-    }
+.boton a{
+    color: #ffffff;
+    text-decoration: none;
+}
