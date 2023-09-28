@@ -34,7 +34,14 @@ header span, .texto-aguamarina {
 }
 
 
-.navbar-nav a:hover{
+.nav-item a:hover{
   color: var(--hover);
-  transition: all 100ms ease-in-out;;
+  transform:scale(1.1);
+  transition: all 100ms ease-in-out;
+  padding-left: 20px;
+}
+
+.nav-item a span:hover{
+  color: rgb(238, 95, 95);
+  text-decoration:dotted;
 }

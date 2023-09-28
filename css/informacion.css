@@ -1,12 +1,12 @@
 
 .info {
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100vw;
-    height: 50vh;
+    height: fit-content;
     justify-content: center;
     align-items: center;
-    padding: 0px 2vw 0px 2vw;
+    padding: 2vh 2vw 5vh 2vw;
     gap: 2vw;
 }
 
@@ -33,10 +33,7 @@
     text-align: center;
 }
 
-.info img {  
-    height: 40%;
-    border-radius: 20px;
-    box-shadow: -1px 4px 5px #488F8B;
+.info img {
     display: none;
 }
 
@@ -44,9 +41,10 @@
 @media screen and (min-width: 1000px) {
 
     .info img {
-        height: 60%;
+        height: 250px;
         border-radius: 20px;
         display:initial;
+        box-shadow: -1px 4px 5px #488F8B;
     }
 
 }

@@ -1,0 +1,59 @@
+.contacto {
+    width: 100vw;
+    height: 40vh;
+}
+
+#contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contacto h2{
+    color: #000000;
+    text-shadow: -1px 4px 5px #488F8B;
+    font-family: 'Sigmar', sans-serif;
+    font-size: clamp(1.8em,2.4em,10vw);
+}
+
+#contacto p{
+    color: #000000;
+    text-shadow: -1px 4px 5px #488F8B;
+    font-family: 'Dosis', sans-serif;
+    font-style: normal;
+    font-size: clamp(1.1em,1.7em,4vw);
+    text-align: center;
+}
+
+
+.enlaces-contacto{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.enlaces-contacto a:hover{
+    cursor: pointer;
+    transform:scale(1.2);
+}
+
+.enlaces-contacto svg{
+    min-height: 100px;
+    max-height: 150px;      
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .enlaces-contacto{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacto {
+        height: fit-content;
+        padding-bottom: 5vh;
+    }
+}
